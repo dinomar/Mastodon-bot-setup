@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Setup</title>
+</head>
+<body>
+
+    <h1>Setup</h1>
+    <h4>Step 1: Register application</h4>
+
+    <form action="/" method="POST">
+        <label for="server">Server name:</label><br>
+        <input type="text" id="server" name="server" placeholder="mastodon.social"><br>
+        <label for="app">App name:</label><br>
+        <input type="text" id="app" name="app" placeholder="Propaganda Bot"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div>
+        <p><%= message%></p>
+        <p><%- info%></p>
+    </div>
+
+    <% if (showNext) { %>
+        <a href="/step2">Step 2</a>
+    <% } %>
+    
+</body>
+</html>
